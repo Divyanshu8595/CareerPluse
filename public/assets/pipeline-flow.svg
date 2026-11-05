@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 180" width="100%" height="100%">
+  <defs>
+    <style>
+      .stage-title { font-family: Georgia, serif; font-weight: 700; font-size: 15px; fill: #0F172A; }
+      .stage-sub { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 11px; fill: #64748B; }
+      .stage-num { font-family: 'Courier New', monospace; font-weight: 700; font-size: 11px; }
+      .flow-line {
+        stroke-dasharray: 8 6;
+        animation: dashMove 1.8s linear infinite;
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -28; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1100" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" strokeWidth="1.5" />
+
+  <!-- Animated Connector Lines -->
+  <line x1="255" y1="90" x2="305" y2="90" stroke="#2563EB" strokeWidth="2.5" class="flow-line" />
+  <line x1="525" y1="90" x2="575" y2="90" stroke="#EAB308" strokeWidth="2.5" class="flow-line" />
+  <line x1="795" y1="90" x2="845" y2="90" stroke="#DC2626" strokeWidth="2.5" class="flow-line" />
+
+  <!-- Stage 1: Blue -->
+  <g transform="translate(30, 32)">
+    <rect width="225" height="116" rx="12" fill="#F8FAFC" stroke="#BFDBFE" strokeWidth="1.5" />
+    <rect width="225" height="5" rx="2" fill="#2563EB" />
+    <text x="18" y="30" class="stage-num" fill="#2563EB">01 · COBALT BLUE</text>
+    <text x="18" y="56" class="stage-title">Application &amp; Vault</text>
+    <text x="18" y="78" class="stage-sub">Store resumes, cover letters,</text>
+    <text x="18" y="95" class="stage-sub">salary bands &amp; recruiter contacts</text>
+  </g>
+
+  <!-- Stage 2: Yellow -->
+  <g transform="translate(300, 32)">
+    <rect width="225" height="116" rx="12" fill="#F8FAFC" stroke="#FEF08A" strokeWidth="1.5" />
+    <rect width="225" height="5" rx="2" fill="#EAB308" />
+    <text x="18" y="30" class="stage-num" fill="#CA8A04">02 · MARIGOLD YELLOW</text>
+    <text x="18" y="56" class="stage-title">Screening &amp; Follow-Ups</text>
+    <text x="18" y="78" class="stage-sub">Automated due-date alerts &amp;</text>
+    <text x="18" y="95" class="stage-sub">1-click personalized email drafter</text>
+  </g>
+
+  <!-- Stage 3: Red -->
+  <g transform="translate(570, 32)">
+    <rect width="225" height="116" rx="12" fill="#F8FAFC" stroke="#FECACA" strokeWidth="1.5" />
+    <rect width="225" height="5" rx="2" fill="#DC2626" />
+    <text x="18" y="30" class="stage-num" fill="#DC2626">03 · VERMILION RED</text>
+    <text x="18" y="56" class="stage-title">Interviews &amp; Deadlines</text>
+    <text x="18" y="78" class="stage-sub">Multi-round interview prep notes,</text>
+    <text x="18" y="95" class="stage-sub">video links &amp; urgent deadlines</text>
+  </g>
+
+  <!-- Stage 4: Green -->
+  <g transform="translate(840, 32)">
+    <rect width="230" height="116" rx="12" fill="#F8FAFC" stroke="#BBF7D0" strokeWidth="1.5" />
+    <rect width="230" height="5" rx="2" fill="#16A34A" />
+    <text x="18" y="30" class="stage-num" fill="#16A34A">04 · EMERALD GREEN</text>
+    <text x="18" y="56" class="stage-title">Google Calendar &amp; Offer</text>
+    <text x="18" y="78" class="stage-sub">2-way Google Calendar OAuth</text>
+    <text x="18" y="95" class="stage-sub">sync, .ICS export &amp; offer negotiation</text>
+  </g>
+</svg>
